@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>
+		HTML Practice &reg;
+
+	</title>
+	
+
+  <style>
+
+
+
+    *
+    {
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+  nav{
+    float: left;
+    width: 20%;
+    height: 1000px;
+    background: linear-gradient(to top, #33ccff 68%, #6666ff 76%);
+    padding: 20px;
+  }
+
+  textarea{
+    float: left;
+    background-color: white;
+    padding: 20px;
+    margin-left:4px ;
+  }
+ul{
+  color: black;
+  text-align: left;
+  font-family: sans-serif;
+  text-decoration: underline;
+  padding: 20px;
+}
+
+h1{
+  color: black;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  padding: 4rem;
+  text-shadow: 2px 2px red;
+}
+form{
+  margin-left: 42rem;
+  padding-bottom: 3rem;
+  overflow: scroll;
+  }
+
+h5{
+  color: darkred;
+  text-align: left;
+}
+
+img
+{
+  width: fit-content;
+  height: fit-content;
+}
+
+.btn{
+  width: 40px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.submit{
+  width: 60px;
+  height: 30px;
+  background-color: white ;
+  text-align: center;
+  border-radius: 7px;
+  margin-top: 2rem;
+  cursor: pointer;
+  margin-left: 28rem;
+  border-style: groove;
+
+}
+.submit:hover{
+  background-color: lightgoldenrodyellow;
+}
+
+table,tr,th,td
+{
+  border-collapse: collapse;
+  
+  border-style: groove;
+  text-align: center;
+}
+table{
+  width: 500px;
+  margin-left: 32rem;
+}
+tr: hover{
+  background-color: navy;
+}
+th, td {
+  padding: 4px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.countryDiv{
+  padding: 1.5rem;
+  margin-left: 40.5rem;
+}
+
+.genderDiv
+{
+  margin-left: 42rem;
+  padding-bottom: 1.5rem;
+  overflow: scroll;
+}
+
+.searchDiv{
+  background-size: border-box;
+  height: 35px;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+}
+
+
+</style>
+<!-- STYLING END  -->
+</head>
+
+
+
+<body>
+
+ 
+  <!-- SECTION START -->
+  <section>
+    
+    <!-- NAVBAR -->
+    <nav>
+       <img src="/home/lap031/Downloads/download.jpeg" >
+       <div class="searchDiv">
+         <input type="text" name="search" placeholder="search">
+       </div>
+    <ul>
+      <li><a href="#">Home</a></li><br>
+      <li><a href="#">Contact</a></li><br>
+      <li><a href="#">About Us</a></li><br>
+    </ul>
+  </nav>
+<h1>SIGN UP PAGE</h1>
+
+<!-- FORM START -->
+	<form>
+   <label for="fname" > First name: 
+   </label> <br>
+   <input type="text" id="fname" name="fname" required ><br><br>
+   <label for="lname">
+     Last name:
+   </label><br>
+   <input type="text" id="lname" name="lname" required>
+   <br><br>
+   <label for="password"> Password:</label><br>
+   <input type="password" id="password" name="password">
+   <br>
+  </form>
+
+  <!-- FORM END -->
+
+
+<!-- AGE FORM -->
+
+<form>
+  <p>Are you above 14?</p><br>
+  <input type="radio" id="Yes" name="age" value="YES">
+  <label for="Yes"> YES </label><br>
+  <input type="radio" id="No" name="age" value="NO" >
+  <label for="No"> NO  </label>
+  
+</form>
+<!-- AGE FORM -->
+
+
+<!-- Birthday -->
+
+  <form>
+    <label for="birthday"> Enter Your Birthday month and year.</label><br>
+    <input type="date" id="bday" name="birthday">
+  </form>
+
+<!-- Birthday -->
+
+  <!-- GENDER FORM -->
+  <div class="genderDiv">
+    <label for="gender" > Gender: </label>
+    <select name="gender" id="gender">
+      <option value="Male"> Male </option>
+      <option value="Female"> Female</option>
+    </select>
+  </div>
+
+<!-- GENDER FORM END -->
+
+
+<!-- COUNTRY -->
+
+<div class="countryDiv">
+  <label for="country">Country: </label>
+  <select id="country" name="country">
+    <option value="Pakistan"> Pakistan </option>
+    <option value="Canada"> Canada</option>
+    <option value="Iran">Iran</option>
+  </select>
+  </div>
+
+<!-- Country -->
+
+
+<!-- CNIC NUMBER -->
+  
+  <form>
+    <label for="cnic" >
+      Enter Your Cnic Number without dashes.
+    </label><br>
+
+    <input type="text"  id="cnic" name="cnic" placeholder="without dashes">
+  </form>
+
+<!-- CNIC NUMBER -->
+
+
+<!-- TABLES  -->
+
+  <table>
+    <tr>
+    <th> TASKS </th>
+    <th>STATUS</th>
+    </tr>
+
+    <tr>
+      <td>
+        Learn HTML
+      </td>
+
+      <td>
+        <label for="status"> YES</label>
+        <input type="radio" name="html" id="yes" value="YES"> <br>
+        <label for="status"> NO</label>
+        <input type="radio" name="html" id="no" value="No"> <br>
+      </td>
+
+
+    </tr>
+
+    <tr>
+      <td>
+        Learn HTML FORMS
+      </td>
+
+      <td>
+        <label for="status"> YES</label>
+        <input type="radio" name="forms" id="yes" value="YES"> <br>
+        <label for="status"> NO</label>
+        <input type="radio" name="forms" id="no" value="No"> <br>
+      </td>
+
+      <tr>
+      <td>
+        Learn CSS
+      </td>
+
+      <td>
+        <label for="status"> YES</label>
+        <input type="radio" name="css" id="yes" value="YES"> <br>
+        <label for="status"> NO</label>
+        <input type="radio" name="css" id="no" value="No"> <br>
+      </td>
+      
+
+    </tr>
+  </table>
+
+
+<!-- TABLES  -->
+
+  <button class="submit"> SUBMIT </button>
+
+  </section>
+  <!-- SECTION END -->
+		
+</body>
+</html>
+
+
